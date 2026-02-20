@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS | Consultoría Integral y Soluciones</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Animated Gradients -->
+    <div class="bg-gradients">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="logo-svg">
+                    <rect width="40" height="40" rx="12" fill="url(#gradient-logo)" />
+                    <path d="M26.5 14H13.5C12.1193 14 11 15.1193 11 16.5V23.5C11 24.8807 12.1193 26 13.5 26H26.5"
+                        stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="draw-path" />
+                    <circle cx="20" cy="20" r="3" fill="var(--color-accent-2)" class="pulse-circle" />
+                    <defs>
+                        <linearGradient id="gradient-logo" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="var(--color-primary)" />
+                            <stop offset="1" stop-color="var(--color-accent-1)" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">CIS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+                <li><a href="#contacto" class="btn btn-primary nav-btn">Contáctanos</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero section">
+        <div class="container hero-container grid-2-col">
+            <div class="hero-content reveal-left">
+                <div class="badge glass-badge">
+                    <span class="dot pulse"></span> Soluciones Digitales Premium
+                </div>
+                <h1 class="hero-title">
+                    Transformando <span class="text-gradient">Ideas</span> en <br>Realidad Digital
+                </h1>
+                <p class="hero-subtitle">
+                    En CIS diseñamos y desarrollamos experiencias digitales de vanguardia que impulsan el crecimiento de
+                    tu negocio.
+                </p>
+                <div class="hero-cta">
+                    <a href="#servicios" class="btn btn-primary btn-glow">Descubre Nuestros Servicios</a>
+                    <a href="#portafolio" class="btn btn-secondary glass-btn">
+                        Ver Proyectos
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="icon-arrow">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual reveal-right">
+                <!-- Abstract 3D/SVG Hero Illustration -->
+                <svg class="hero-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="svgg-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="var(--color-accent-1)"></stop>
+                            <stop offset="100%" stop-color="var(--color-accent-2)"></stop>
+                        </linearGradient>
+                        <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="rgba(192, 132, 252, 0.5)"></stop>
+                            <stop offset="100%" stop-color="transparent"></stop>
+                        </radialGradient>
+                    </defs>
+                    <circle cx="250" cy="250" r="180" fill="url(#glow)" class="svg-glow-circle" />
+                    <!-- Abstract geometric overlapping layers -->
+                    <path class="svg-path-anim path-1" d="M150,150 L350,150 L350,350 L150,350 Z" fill="none"
+                        stroke="url(#svgg-1)" stroke-width="3" rx="40" />
+                    <path class="svg-path-anim path-2"
+                        d="M100,250 C100,150 150,100 250,100 C350,100 400,150 400,250 C400,350 350,400 250,400 C150,400 100,350 100,250 Z"
+                        fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+                    <circle class="svg-orbit" cx="250" cy="100" r="8" fill="var(--color-accent-1)" />
+                    <circle class="svg-orbit" cx="400" cy="250" r="12" fill="var(--color-accent-2)" />
+                    <circle class="svg-orbit" cx="100" cy="250" r="6" fill="#45f3ff" />
+                    <!-- Central dynamic element -->
+                    <g class="svg-center-element">
+                        <polygon points="250,170 320,290 180,290" fill="rgba(255, 255, 255, 0.05)"
+                            stroke="var(--color-accent-1)" stroke-width="2" />
+                        <circle cx="250" cy="250" r="20" fill="var(--color-accent-2)" class="pulse-center" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="subtitle">¿Quiénes Somos?</span>
+                <h2 class="title">Innovación constante para el <span class="text-gradient-alt">éxito empresarial</span>
+                </h2>
+            </div>
+            <div class="about-grid grid-2-col">
+                <div class="about-image-wrapper reveal-left glass-card">
+                    <div class="glass-reflection"></div>
+                    <svg class="about-svg" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="transparent" />
+                        <circle cx="100" cy="100" r="60" fill="url(#gradient-logo)" opacity="0.4" class="float-anim" />
+                        <circle cx="280" cy="200" r="80" fill="var(--color-accent-2)" opacity="0.3"
+                            class="float-anim-reverse" />
+                        <path d="M50 250 Q 150 150 250 250 T 400 150" fill="none" stroke="rgba(255,255,255,0.2)"
+                            stroke-width="3" class="wave-path" />
+                        <path d="M0 200 Q 150 280 250 150 T 450 200" fill="none" stroke="var(--color-accent-1)"
+                            stroke-width="2" class="wave-path" stroke-dasharray="10 10" />
+                    </svg>
+                    <div class="stats-card glass-badge absolute-bl">
+                        <span class="text-gradient stat-num">+50</span>
+                        <span class="stat-text">Proyectos Exitosos</span>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3 class="about-heading">Tu aliado estratégico en tecnología.</h3>
+                    <p class="text-light">
+                        En CIS (Consultoría Integral y Soluciones), combinamos un diseño estelar con ingeniería robusta.
+                        No solo creamos páginas web; construimos ecosistemas digitales que conectan marcas con usuarios
+                        a un nivel profundo.
+                    </p>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Seguridad y Fiabilidad</h4>
+                                <p>Arquitecturas sólidas con los más altos estándares tecnológicos.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Crecimiento Escalable</h4>
+                                <p>Soluciones diseñadas para adaptarse al crecimiento de tu empresa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services section bg-darker">
+        <div class="container">
+            <div class="section-header align-center reveal-up">
+                <span class="subtitle">Nuestras Especialidades</span>
+                <h2 class="title">Servicios que <span class="text-gradient">impulsan</span> tu marca</h2>
+                <p class="text-light max-w-sub">Ofrecemos un abanico completo de soluciones para cubrir todas las
+                    necesidades digitales de tu negocio.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card glass-card reveal-up" style="--delay: 100ms">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="draw-on-hover" d="M12 20V10M18 20V4M6 20v-4" stroke="url(#gradient-logo)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="draw-on-hover offset-path" d="M2 20h20" stroke="rgba(255,255,255,0.7)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Sitios web de alto rendimiento, optimizados para SEO y conversiones.</p>
+                    <a href="#contacto" class="btn-link">Saber más <span class="arrow">&rarr;</span></a>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="service-card glass-card reveal-up" style="--delay: 200ms">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect class="draw-on-hover" x="3" y="3" width="18" height="18" rx="2" ry="2"
+                                stroke="url(#gradient-logo)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <circle class="draw-on-hover offset-path" cx="8.5" cy="8.5" r="1.5"
+                                fill="rgba(255,255,255,0.7)" />
+                            <path class="draw-on-hover offset-path" d="M21 15l-5-5L5 21" stroke="rgba(255,255,255,0.7)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Diseño UI/UX</h3>
+                    <p>Interfaces intuitivas, estéticas y centradas en la experiencia del usuario.</p>
+                    <a href="#contacto" class="btn-link">Saber más <span class="arrow">&rarr;</span></a>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="service-card glass-card reveal-up" style="--delay: 300ms">
+                    <div class="service-icon-wrapper">
+                        <svg class="service-svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="draw-on-hover"
+                                d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+                                stroke="url(#gradient-logo)" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path class="draw-on-hover offset-path" d="M12 8v4l3 3" stroke="rgba(255,255,255,0.7)"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3>Marketing Digital</h3>
+                    <p>Estrategias data-driven para aumentar tu visibilidad y adquisición de clientes.</p>
+                    <a href="#contacto" class="btn-link">Saber más <span class="arrow">&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portafolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header align-center reveal-up">
+                <span class="subtitle">Nuestro Trabajo</span>
+                <h2 class="title">Proyectos <span class="text-gradient">Destacados</span></h2>
+            </div>
+            <div class="portfolio-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                <button class="filter-btn" data-filter="ui">Diseño UI/UX</button>
+            </div>
+            <div class="portfolio-grid grid-3-col">
+                <!-- Project 1 -->
+                <div class="portfolio-item glass-card reveal-up" data-category="web">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-placeholder bg-gradient-1">
+                            <svg class="portfolio-placeholder-svg" width="60" height="60" viewBox="0 0 24 24"
+                                fill="none">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="white"
+                                    stroke-width="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" stroke="white" stroke-width="2" />
+                                <line x1="12" y1="17" x2="12" y2="21" stroke="white" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-outline-light">Ver Demo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-tag">Desarrollo Web</span>
+                        <h4>E-Commerce Premium</h4>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item glass-card reveal-up" data-category="ui">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-placeholder bg-gradient-2">
+                            <svg class="portfolio-placeholder-svg" width="60" height="60" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="white"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-outline-light">Ver Demo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-tag">Diseño UI/UX</span>
+                        <h4>App Móvil Finanzas</h4>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item glass-card reveal-up" data-category="web">
+                    <div class="portfolio-img-wrapper">
+                        <div class="portfolio-placeholder bg-gradient-3">
+                            <svg class="portfolio-placeholder-svg" width="60" height="60" viewBox="0 0 24 24"
+                                fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" />
+                                <path d="M12 16v-4M12 8h.01" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-outline-light">Ver Demo</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-tag">Desarrollo Web</span>
+                        <h4>Portal Corporativo</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact section">
+        <div class="container container-sm">
+            <div class="glass-card contact-card reveal-up">
+                <div class="contact-header">
+                    <h2 class="title">Impulsa tu <span class="text-gradient">Proyecto</span></h2>
+                    <p class="text-light">Déjanos tus datos y nos pondremos en contacto contigo en menos de 24 horas.
+                    </p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" class="form-control" placeholder="Tu nombre o empresa" required>
+                        <div class="input-focus-bg"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="tucorreo@ejemplo.com" required>
+                        <div class="input-focus-bg"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" class="form-control" rows="4" placeholder="Háblanos sobre tu proyecto..."
+                            required></textarea>
+                        <div class="input-focus-bg"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-glow">
+                        <span>Enviar Mensaje</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="icon-send">
+                            <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">CIS</span>
+                <p class="text-light">Consultoría Integral y Soluciones.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg></a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg></a>
+                <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CIS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
